@@ -13,6 +13,9 @@
     <Compile Update="DialogoSala.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DialogoSesion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="salas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DialogoSala.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DialogoSesion.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

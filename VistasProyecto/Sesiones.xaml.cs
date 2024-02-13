@@ -20,6 +20,7 @@ namespace VistasProyecto
     /// </summary>
     public partial class Sesiones : UserControl
     {
+
         public Sesiones()
         {
             InitializeComponent();

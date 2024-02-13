@@ -10,19 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace VistasProyecto
 {
     /// <summary>
-    /// Lógica de interacción para salas.xaml
+    /// Lógica de interacción para DialogoSesion.xaml
     /// </summary>
-    public partial class salas : UserControl
+    public partial class DialogoSesion : Window
     {
-        public salas()
+        private DialogoSesionVM vm;
+        public DialogoSesion()
         {
             InitializeComponent();
+            vm = new DialogoSalaVM();
+            this.DataContext = vm;
+        }
+        private void AceptarButton1_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Aceptar();
+            this.DialogResult = true;
         }
     }
 }
