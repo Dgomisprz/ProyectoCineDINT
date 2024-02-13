@@ -16,10 +16,10 @@
     <Compile Update="DialogoSesion.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="salas.xaml.cs">
+    <Compile Update="ListaSalasUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Sesiones.xaml.cs">
+    <Compile Update="ListaSesionesUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,13 +33,13 @@
     <Page Update="DialogoSesion.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ListaSalasUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListaSesionesUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="salas.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Sesiones.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
