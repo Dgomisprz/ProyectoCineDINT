@@ -7,13 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Cartelera.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="DialogoSala.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="DialogoSesion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FormularioNuevaVentaUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListaOcupacionUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListaPeliculasUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ListaSalasUC.xaml.cs">
@@ -24,13 +30,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Cartelera.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="DialogoSala.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DialogoSesion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormularioNuevaVentaUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListaOcupacionUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListaPeliculasUC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ListaSalasUC.xaml">
