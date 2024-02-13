@@ -1,0 +1,60 @@
+﻿<Window x:Class="VistasProyecto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VistasProyecto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!-- Estilo para el TreeView -->
+        <Style TargetType="TreeView">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+
+        <Style x:Key="RoundButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{TemplateBinding Background}"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel>
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/SalaDeCine.jpg" Stretch="Fill" Opacity="1"/>
+        </DockPanel.Background>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10">
+            <DockPanel DockPanel.Dock="Left" LastChildFill="True">
+                <Image Stretch="Uniform" Margin="10" Source="/Resources/quiero-un-logo-para-un-cine-upscaled.jpg" Width="125" Height="72" HorizontalAlignment="Left" DockPanel.Dock="Top"/>
+                <TreeView DockPanel.Dock="Top">
+                    <TreeViewItem Header="Gestor del cine">
+                        <Button Content="Mostrar cartelera" Margin="0 5 0 0" />
+                        <Button Content="Gestionar salas" Margin="0 5 0 0"/>
+                        <Button Content="Gestionar sesiones" Margin="0 5 0 0"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Trabajador de Taquilla">
+                        <Button Content="Venta en taquillas" Margin="0 5 0 0"/>
+                        <Button Content="Ocupacción de salas" Margin="0 5 0 0"/>
+                    </TreeViewItem>
+                </TreeView>
+                <Button Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource RoundButtonStyle}" DockPanel.Dock="Bottom">
+                    <Image Width="25" Height="25" Source="/Resources/32.png"/>
+                </Button>
+                <Rectangle/>
+            </DockPanel>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10">
+            <DockPanel></DockPanel>
+        </Border>
+    </DockPanel >
+</Window>
