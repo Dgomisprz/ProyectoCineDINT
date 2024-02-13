@@ -1,0 +1,22 @@
+﻿<Window x:Class="VistasProyecto.DialogoSesion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VistasProyecto"
+        mc:Ignorable="d"
+        Title="DialogoSesion" Height="200" Width="400">
+    <StackPanel>
+        <Label Name="nPelicula">Introduce el id de la pelicula:</Label>
+        <TextBox Text="{Binding Path=Pelicula, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
+        <Label Name="sala">Introduce el numero de sala:</Label>
+        <TextBox Text="{Binding Path=Sala, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
+        <Label Name="hPelicula">Introduce la hora:</Label>
+        <TextBox Text="{Binding Path=Hora, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
+
+        <WrapPanel HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" x:Name="aceptarButton1"  MinWidth="60" Margin="0,0,10,0" Click="AceptarButton1_Click">_Ok</Button>
+            <Button IsCancel="True" MinWidth="60">_Cancel</Button>
+        </WrapPanel>
+    </StackPanel>
+</Window>

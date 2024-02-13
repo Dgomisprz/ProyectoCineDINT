@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace VistasProyecto
 {
     /// <summary>
-    /// Lógica de interacción para salas.xaml
+    /// Lógica de interacción para ListaSalasUC.xaml
     /// </summary>
-    public partial class salas : UserControl
+    public partial class ListaSalasUC : UserControl
     {
-        public salas()
+        public ListaSalasUC()
         {
             InitializeComponent();
         }
