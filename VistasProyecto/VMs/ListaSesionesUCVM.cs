@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace VistasProyecto.VMs
 {
-    class ListaSalasUCVM : ObservableObject
+    class ListaSesionesUCVM : ObservableObject
     {
-        private ObservableCollection<Salas> _salas;
+        private ObservableCollection<Sesiones> _sesion;
 
-        public ObservableCollection<Salas> Salas
+        public ObservableCollection<Sesiones> Sesion
         {
-            get { return _salas; }
-            set { SetProperty(ref _salas, value); }
+            get { return _sesion; }
+            set { SetProperty(ref _sesion, value); }
         }
     }
 }
