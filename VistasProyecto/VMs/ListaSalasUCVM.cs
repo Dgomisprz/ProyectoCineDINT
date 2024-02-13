@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VistasProyecto.VMs
 {
-    class ListaSalasVM
+    class ListaSalasUCVM
     {
     }
 }
