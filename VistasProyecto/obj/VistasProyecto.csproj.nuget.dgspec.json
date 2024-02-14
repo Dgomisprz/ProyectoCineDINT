@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\VistasProyecto\\VistasProyecto.csproj": {}
+    "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\VistasProyecto\\VistasProyecto.csproj": {
+    "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\VistasProyecto\\VistasProyecto.csproj",
+        "projectUniqueName": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
         "projectName": "VistasProyecto",
-        "projectPath": "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\VistasProyecto\\VistasProyecto.csproj",
+        "projectPath": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
         "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\VistasProyecto\\obj\\",
+        "outputPath": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
