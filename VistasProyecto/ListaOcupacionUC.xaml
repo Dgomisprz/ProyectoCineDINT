@@ -7,8 +7,26 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Label>Sala 1</Label>
-        <Label>Sala 1</Label>
-        <Label>Sala 1</Label>
+        <UniformGrid Margin="5" >
+            <UniformGrid.Columns>3</UniformGrid.Columns>
+            <StackPanel>
+                <Label FontSize="20" FontWeight="Bold">Sala 1</Label>
+                <TextBox Text="{Binding Path=Hora, UpdateSourceTrigger=PropertyChanged} ">
+                    
+                </TextBox>
+            </StackPanel>
+            <StackPanel >
+                <Label FontSize="20" FontWeight="Bold">Sala 2</Label>
+                <TextBox>
+
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Label FontSize="20" FontWeight="Bold" >Sala 3</Label>
+                <TextBox>
+
+                </TextBox>
+            </StackPanel>
+        </UniformGrid>
     </Grid>
 </UserControl>
