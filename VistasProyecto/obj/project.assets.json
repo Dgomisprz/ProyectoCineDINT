@@ -601,11 +601,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
+      "projectUniqueName": "C:\\Users\\alumno\\Desktop\\DINT\\Tema7\\github\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
       "projectName": "VistasProyecto",
-      "projectPath": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
+      "projectPath": "C:\\Users\\alumno\\Desktop\\DINT\\Tema7\\github\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\obj\\",
+      "outputPath": "C:\\Users\\alumno\\Desktop\\DINT\\Tema7\\github\\ProyectoCineDINT\\VistasProyecto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -673,13 +673,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\alumno\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
