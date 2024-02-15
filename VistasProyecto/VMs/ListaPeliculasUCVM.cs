@@ -21,7 +21,8 @@ namespace VistasProyecto.VMs
         }
         private cinebdService _servicio;
 
-        public ListaPeliculasUCVM() { 
+        public ListaPeliculasUCVM() 
+        { 
             _servicio = new cinebdService();
             Peliculas = new ObservableCollection<Peliculas>(_servicio.getAllPeliculas());
         }

@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using ProyectoCine.models;
+using ProyectoCine.services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,6 +18,14 @@ namespace VistasProyecto.VMs
         {
             get { return _sesion; }
             set { SetProperty(ref _sesion, value); }
+        }
+
+        private cinebdService _servicio;
+
+        public ListaSesionesUCVM()
+        {
+            _servicio = new cinebdService();
+            Sesion = new ObservableCollection<Sesiones>(_servicio.getAllSesiones());
         }
     }
 }

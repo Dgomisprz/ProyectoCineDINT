@@ -24,8 +24,8 @@
         </WrapPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" DockPanel.Dock="Bottom">
-            <Button Content="añadir" Margin="0,0,10,0" Command="{Binding Path=DialogoAñadirSalaCommand}/>
-        <Button Content="Modificar" Command="{Binding Path=DialogoAñadirSalaCommand}/>
+            <Button Content="añadir" Margin="0,0,10,0" Command="{Binding Path=DialogoAñadirSalaCommand}"></Button>
+            <Button Content="Modificar" Command="{Binding Path=DialogoAñadirSalaCommand}"/>
         </StackPanel>
 
     </DockPanel>
