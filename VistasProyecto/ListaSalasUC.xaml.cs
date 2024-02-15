@@ -20,9 +20,12 @@ namespace VistasProyecto
     /// </summary>
     public partial class ListaSalasUC : UserControl
     {
+        private ListaSalasUCVM vm;
         public ListaSalasUC()
         {
             InitializeComponent();
+            vm = new ListaSalasUCVM();
+            this.DataContext = vm;
         }
     }
 }
