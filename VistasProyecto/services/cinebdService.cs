@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ProyectoCine.services
@@ -161,23 +162,25 @@ namespace ProyectoCine.services
         public List<object[]> getOcupación()
         {
             List<object[]> list = new List<object[]>();
-            comando.CommandText = "SELECT s.hora, p.titulo, p.cartel, sa.capacidad, COUNT(v.idVenta) AS \"NumVentas\"" +
+            comando.CommandText = "SELECT sal.numero, " +
+                "sal.capacidad, " +
+                "s.hora, " +
+                "COUNT(v.idVenta) AS NumVentas, " +
                 "FROM sesiones s " +
-                "JOIN peliculas p ON  s.pelicula = p.idPelicula" +
-                "JOIN salas sa ON s.sala = sa.idSala" +
-                "JOIN ventas v ON s.idSesion = v.sesion";
+                "JOIN ventas v ON s.idSesion = v.sesion " +
+                "JOIN salas sal ON s.sala = sal.idSala " +
+                "GROUP BY sal.idSala, s.hora";
 
             SqliteDataReader lector = comando.ExecuteReader();
             if (lector.HasRows)
             {
                 while (lector.Read())
                 {
+                    string numSala = (string)lector["sal.numero"];
+                    string capacidadSala = (string)lector["sal.capacidad"];
                     string hora = (string)lector["s.hora"];
-                    string titulo = (string)lector["p.titulo"];
-                    string cartel = (string)lector["p.cartel"];
-                    int capacidad = (int)lector["sa.capacidad"];
                     int numVentas = (int)lector["NumVentas"];
-                    object[] objects = { hora, titulo, cartel, capacidad, numVentas };
+                    object[] objects = { numSala, capacidadSala, hora, numVentas };
                     list.Add(objects);
                 }
             }
