@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VistasProyecto.VMs;
 
 namespace VistasProyecto
 {
@@ -23,7 +24,7 @@ namespace VistasProyecto
         public DialogoSesion()
         {
             InitializeComponent();
-            vm = new DialogoSalaVM();
+            vm = new DialogoSesionVM();
             this.DataContext = vm;
         }
         private void AceptarButton1_Click(object sender, RoutedEventArgs e)

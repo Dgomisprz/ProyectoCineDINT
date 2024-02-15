@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoCine
+namespace VistasProyecto.Models
 {
     class SalaSendMessage : ValueChangedMessage<Salas>
     {

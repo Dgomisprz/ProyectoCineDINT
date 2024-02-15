@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VistasProyecto.VMs;
 
 namespace VistasProyecto
 {
@@ -20,9 +21,13 @@ namespace VistasProyecto
     /// </summary>
     public partial class FormularioNuevaVentaUC : UserControl
     {
+
+        private FormularioNuevaVentaUCVM vm;
         public FormularioNuevaVentaUC()
         {
             InitializeComponent();
+            vm = new FormularioNuevaVentaUCVM();
+            this.DataContext = vm;
         }
     }
 }
