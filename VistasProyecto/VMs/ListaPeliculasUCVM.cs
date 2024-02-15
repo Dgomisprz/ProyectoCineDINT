@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using ProyectoCine.models;
+using ProyectoCine.services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,5 +19,13 @@ namespace VistasProyecto.VMs
             get { return _peliculas; }
             set { SetProperty(ref _peliculas, value); }
         }
+        private cinebdService _servicio;
+
+        public ListaPeliculasUCVM() { 
+            _servicio = new cinebdService();
+            Peliculas = new ObservableCollection<Peliculas>(_servicio.getAllPeliculas());
+        }
+
+
     }
 }

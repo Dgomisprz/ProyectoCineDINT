@@ -8,12 +8,18 @@ using VistasProyecto;
 
 namespace VistasProyecto.services
 {
-    public class NavigationService
+    public class NavegacionServicio
     {
         private static UserControl listadoPeliculas = new ListaPeliculasUC();
         private static UserControl listadoSalas = new ListaSalasUC();
         private static UserControl listadoSesiones = new ListaSesionesUC();
         private static UserControl listadoOcupacion = new ListaOcupacionUC();
+
+        public NavegacionServicio() 
+        { 
+        
+        }
+
         public UserControl CargarListaPeliculasUC()
         {
             return listadoPeliculas;

@@ -38,7 +38,7 @@
                 <Image Stretch="Uniform" Margin="10" Source="/Resources/quiero-un-logo-para-un-cine-upscaled.jpg" Width="125" Height="72" HorizontalAlignment="Left" DockPanel.Dock="Top"/>
                 <TreeView DockPanel.Dock="Top">
                     <TreeViewItem Header="Gestor del cine">
-                        <Button Content="Mostrar cartelera" Margin="0 5 0 0" />
+                        <Button Content="Mostrar cartelera" Margin="0 5 0 0" Command="{Binding Path= ListaPeliculasUCCommand}"/>
                         <Button Content="Gestionar salas" Margin="0 5 0 0"/>
                         <Button Content="Gestionar sesiones" Margin="0 5 0 0"/>
                     </TreeViewItem>
@@ -54,7 +54,7 @@
             </DockPanel>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Margin="10">
-            <DockPanel></DockPanel>
+            <ContentControl Content="{Binding Path=ContenidoMostrar}"></ContentControl>
         </Border>
     </DockPanel >
 </Window>
