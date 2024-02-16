@@ -1,12 +1,12 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
-using ProyectoCine;
-using ProyectoCine.models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VistasProyecto.models;
 using VistasProyecto.Models;
 
 namespace VistasProyecto.VMs

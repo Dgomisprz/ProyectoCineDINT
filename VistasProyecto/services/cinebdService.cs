@@ -6,8 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using VistasProyecto.models;
 
-namespace ProyectoCine.services
+namespace VistasProyecto.services
 {
     class cinebdService
     {
@@ -96,7 +97,7 @@ namespace ProyectoCine.services
 
         }
 
-        public void getAllSesiones()
+        public List<Sesiones> getAllSesiones()
         {
             List<Sesiones> listaSesiones = new List<Sesiones>();
             comando.CommandText = "SELECT * FROM sesiones";
@@ -112,6 +113,7 @@ namespace ProyectoCine.services
                     listaSesiones.Add(new Sesiones(idSesion, pelicula, sala, hora));
                 }
             }
+            return listaSesiones;
         }
         public void anyadirSesion(Sesiones sesion)
         {

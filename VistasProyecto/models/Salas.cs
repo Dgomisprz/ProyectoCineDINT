@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoCine.models
+namespace VistasProyecto.models
 {
     public class Salas : ObservableObject
     {

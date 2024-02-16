@@ -22,7 +22,7 @@ namespace VistasProyecto.VMs
             set { SetProperty(ref contenidoMostrar, value); }
         }
         public RelayCommand DialogoAñadirSalaCommand { get; }
-        public RelayCommand DialogoAñadirSesionCommand { get; }
+       
         public RelayCommand ListaSesionesUCCommand { get; }
         public RelayCommand ListaSalasUCCommand { get; }
 

@@ -27,7 +27,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" DockPanel.Dock="Bottom">
             <Button Content="añadir" Margin="0,0,10,0" Command="{Binding Path=DialogoAñadirSesionCommand}"></Button>
             <Button Content="Modificar" Command="{Binding Path=DialogoAñadirSesionCommand}"></Button>
-            <Button Content="Eliminar" Command="{Binding Path=DialogoEliminarSesionCommand}"></Button>
+            <Button Content="Eliminar" ></Button>
         </StackPanel>
     </DockPanel>
 </UserControl>

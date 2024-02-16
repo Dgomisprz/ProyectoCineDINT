@@ -27,7 +27,7 @@ namespace VistasProyecto.services
         public bool? AbrirDialogoSala()
         {
             DialogoSala s = new DialogoSala();
-            return s.ShowDialogoSala();
+            return s.ShowDialog();
         }
         public UserControl CargarListaSalasUC()
         {

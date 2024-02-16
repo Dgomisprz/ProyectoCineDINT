@@ -1,17 +1,22 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
-using ProyectoCine.models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VistasProyecto.models;
 using VistasProyecto.Models;
 
 namespace VistasProyecto.VMs
 {
     internal class DialogoSesionVM : ObservableObject
+
     {
+        
+
         private Sesiones _nuevaSesion;
 
         public Sesiones NuevaSesion
@@ -21,7 +26,7 @@ namespace VistasProyecto.VMs
         }
 
         public DialogoSesionVM() { 
-        
+            
         }
 
         public void Aceptar() {

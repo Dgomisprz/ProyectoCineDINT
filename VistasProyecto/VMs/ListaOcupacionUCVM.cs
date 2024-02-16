@@ -9,5 +9,6 @@ namespace VistasProyecto.VMs
 {
     internal class ListaOcupacionUCVM : ObservableObject
     {
+        //rescatar lista de objetos uno a uno
     }
 }

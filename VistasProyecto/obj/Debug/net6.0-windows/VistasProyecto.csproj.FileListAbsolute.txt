@@ -65,3 +65,5 @@ C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\ob
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.dll
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\refint\VistasProyecto.dll
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.pdb
+C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSalasUC.g.cs
+C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSesionesUC.g.cs
