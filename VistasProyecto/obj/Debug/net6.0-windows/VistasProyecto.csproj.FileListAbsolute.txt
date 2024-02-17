@@ -67,3 +67,17 @@ C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\ob
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.pdb
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSalasUC.g.cs
 C:\Users\alumno\source\repos\ProyectoCineDINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSesionesUC.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.csproj.AssemblyReference.cache
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\DialogoSala.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\DialogoSesion.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\FormularioNuevaVentaUC.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaPeliculasUC.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSalasUC.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\ListaSesionesUC.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto_MarkupCompile.cache
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto_MarkupCompile.lref
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.dll
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\refint\VistasProyecto.dll
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\VistasProyecto.pdb
