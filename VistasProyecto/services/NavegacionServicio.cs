@@ -33,6 +33,7 @@ namespace VistasProyecto.services
         public UserControl CargarListaSalasUC()
         {
             return listadoSalas;
+            
         }
         public bool? AbrirDialogoSesion()
         {

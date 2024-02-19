@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using VistasProyecto.models;
 using VistasProyecto.Models;
 using VistasProyecto.services;
@@ -29,7 +30,8 @@ namespace VistasProyecto.VMs
 
         public ListaSalasUCVM()
         {
-            ns = new NavegacionServicio();
+             ns = new NavegacionServicio(); 
+            
             _servicio = new cinebdService();
             Salas = new ObservableCollection<Salas>(_servicio.getAllSalas());
             DialogoAñadirSalasCommand = new RelayCommand(AbrirVentanaSalas);

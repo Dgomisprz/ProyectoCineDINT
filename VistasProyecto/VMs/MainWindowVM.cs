@@ -16,13 +16,12 @@ namespace VistasProyecto.VMs
     {
         private NavegacionServicio ns;
        
-        private UserControl contenidoMostrar;
-        public UserControl ContenidoMostrar
+        private UserControl? contenidoMostrar;
+        public UserControl? ContenidoMostrar
         {
             get { return contenidoMostrar; }
             set { SetProperty(ref contenidoMostrar, value); }
         }
-        public RelayCommand DialogoAñadirSalaCommand { get; }
        
         public RelayCommand ListaSesionesUCCommand { get; }
         public RelayCommand ListaSalasUCCommand { get; }
@@ -41,8 +40,6 @@ namespace VistasProyecto.VMs
             ListaPeliculasUCCommand = new RelayCommand(CargarUCListaPeliculas);
             FNuevaVentaUCCommand = new RelayCommand(CargarUCVentas);
             LOcupacionUCCommand = new RelayCommand(CargarUCListaOcupacion);
-
-
 
         }
 

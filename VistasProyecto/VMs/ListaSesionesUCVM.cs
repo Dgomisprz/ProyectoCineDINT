@@ -39,7 +39,7 @@ namespace VistasProyecto.VMs
 
         public ListaSesionesUCVM()
         {
-            ns = new NavegacionServicio();
+             ns = new NavegacionServicio();
             _servicio = new cinebdService();
             Sesion = new ObservableCollection<Sesiones>(_servicio.getAllSesiones());
             DialogoAñadirSesionCommand = new RelayCommand(AbrirVentanaSesion);

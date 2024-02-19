@@ -47,20 +47,18 @@ namespace VistasProyecto.services
         {
             List<Salas> listaSalas = new List<Salas>();
             comando.CommandText = "SELECT * FROM salas";
-            try {
-                SqliteDataReader lector = comando.ExecuteReader();
-                if (lector.HasRows)
+            SqliteDataReader lector = comando.ExecuteReader();
+            if (lector.HasRows)
+            {
+                while (lector.Read())
                 {
-                    while (lector.Read())
-                    {
-                        int idSala = (int)(long)lector["idSala"];
-                        string numero = (string)lector["numero"];
-                        int capacidad = (int)(long)lector["capacidad"];
-                        bool disponible = (bool)lector["disponible"];
-                        listaSalas.Add(new Salas(idSala, numero, capacidad, disponible));
-                    }
+                    int idSala = (int)(long)lector["idSala"];
+                    string numero = (string)lector["numero"];
+                    int capacidad = (int)(long)lector["capacidad"];
+                    bool disponible = (bool)lector["disponible"];
+                    listaSalas.Add(new Salas(idSala, numero, capacidad, disponible));
                 }
-            } catch (Exception e) { MessageBox.Show("No carga listas"); }
+            }
             return listaSalas;
         }
         public void anyadirSala(Salas sala)
@@ -167,24 +165,26 @@ namespace VistasProyecto.services
         public List<object[]> getOcupación()
         {
             List<object[]> list = new List<object[]>();
-            comando.CommandText = "SELECT sal.numero, " +
-                "sal.capacidad, " +
-                "s.hora, " +
-                "COUNT(v.idVenta) AS NumVentas, " +
-                "FROM sesiones s " +
-                "JOIN ventas v ON s.idSesion = v.sesion " +
-                "JOIN salas sal ON s.sala = sal.idSala " +
-                "GROUP BY sal.idSala, s.hora";
+            //comando.CommandText = "SELECT sal.numero, " +
+            //"sal.capacidad, " +
+            //"s.hora, " +
+            //"COUNT(v.idVenta) AS NumVentas " +
+            //"FROM sesiones s " +
+            //"JOIN ventas v ON s.idSesion = v.sesion " +
+            //"JOIN salas sal ON s.sala = sal.idSala " +
+            //"GROUP BY sal.idSala, s.hora";
+            comando.CommandText = "SELECT sal.numero, sal.capacidad, s.hora, COUNT(v.idVenta) AS NumVentas FROM sesiones s JOIN ventas v JOIN salas sal ON s.idSesion = v.sesion AND s.sala = sal.idSala GROUP BY sal.idSala, s.hora";
 
             SqliteDataReader lector = comando.ExecuteReader();
             if (lector.HasRows)
             {
                 while (lector.Read())
                 {
-                    string numSala = (string)lector["sal.numero"];
-                    string capacidadSala = (string)lector["sal.capacidad"];
-                    string hora = (string)lector["s.hora"];
-                    int numVentas = (int)(long)lector["NumVentas"];
+
+                    string numSala = lector.GetString(0);
+                    string capacidadSala = lector.GetString(1);
+                    string hora = lector.GetString(2);
+                    int numVentas = lector.GetInt32(3);
                     object[] objects = { numSala, capacidadSala, hora, numVentas };
                     list.Add(objects);
                 }
