@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using ProyectoCine.models;
-using ProyectoCine.services;
+
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

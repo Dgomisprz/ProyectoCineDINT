@@ -1,5 +1,5 @@
 ﻿using Microsoft.Data.Sqlite;
-using ProyectoCine.models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
