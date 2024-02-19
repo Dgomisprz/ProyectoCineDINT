@@ -24,9 +24,12 @@ namespace VistasProyecto
         private ListaSalasUCVM vm;
         public ListaSalasUC()
         {
-            InitializeComponent();
-            vm = new ListaSalasUCVM();
-            this.DataContext = vm;
+
+            try {
+                InitializeComponent();
+                vm = new ListaSalasUCVM();
+                this.DataContext = vm;
+            } catch (Exception ex) { Console.WriteLine("Error en el constructor de ListaSalasUC: " + ex.Message);}
         }
     }
 }

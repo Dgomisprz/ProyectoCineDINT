@@ -17,8 +17,8 @@ namespace VistasProyecto.VMs
 {
     class ListaSalasUCVM : ObservableObject
     {
-        private NavegacionServicio ns;
-        public RelayCommand DialogoAñadirSalasCommand { get; }
+        private NavegacionServicio navs;
+        public RelayCommand DialogoSalasCommand { get; }
         private ObservableCollection<Salas> _salas = new ObservableCollection<Salas>();
 
         public ObservableCollection<Salas> Salas
@@ -30,19 +30,39 @@ namespace VistasProyecto.VMs
 
         public ListaSalasUCVM()
         {
-             ns = new NavegacionServicio(); 
+             navs = new NavegacionServicio(); 
             
             _servicio = new cinebdService();
             Salas = new ObservableCollection<Salas>(_servicio.getAllSalas());
-            DialogoAñadirSalasCommand = new RelayCommand(AbrirVentanaSalas);
+            DialogoSalasCommand = new RelayCommand(AbrirVentanaSalas);
 
-            WeakReferenceMessenger.Default.Register<SalaSendMessage>(this, (r, m) =>
+            
+            WeakReferenceMessenger.Default.Register<SalaSendMessage>(this, (vm, mensaje) =>
             {
-                Salas.Add(m.Value);
+                var viewModel = vm as ListaSalasUCVM;
+                if (viewModel != null)
+                {
+                    // Verificar si la sala ya existe en la lista
+                    var salaExistente = viewModel.Salas.FirstOrDefault(s => s.IdSala == mensaje.Value.IdSala);
+                    if (salaExistente != null)
+                    {
+                        // Si la sala existe, actualizar sus propiedades
+                        salaExistente.Numero = mensaje.Value.Numero;
+                        salaExistente.Capacidad = mensaje.Value.Capacidad;
+                        salaExistente.Disponible = mensaje.Value.Disponible;
+                    }
+                    else
+                    {
+                        // Si la sala no existe, agregarla a la lista
+                        viewModel.Salas.Add(mensaje.Value);
+                        _servicio.anyadirSala(mensaje.Value);
+
+                    }
+                }
             });
         }
         public void AbrirVentanaSalas() {
-            bool? resultado = ns.AbrirDialogoSala();
+          bool? resultado = navs.AbrirDialogoSala();
         }
     }
 }

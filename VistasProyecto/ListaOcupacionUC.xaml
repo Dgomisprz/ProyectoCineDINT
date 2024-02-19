@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:VistasProyecto"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <ListBox ItemsSource="{Binding Path=ListaPersonas, UpdateSourceTrigger=PropertyChanged}">
+    <ListBox ItemsSource="{Binding Path=OcupacionSalas, UpdateSourceTrigger=PropertyChanged}">
         <ListBox.ItemTemplate>
             <DataTemplate>
                 <StackPanel>

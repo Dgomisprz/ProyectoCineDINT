@@ -17,7 +17,7 @@ namespace VistasProyecto.VMs
     class ListaSesionesUCVM : ObservableObject
     {
 
-        private NavegacionServicio ns;
+        private NavegacionServicio ns2;
         public RelayCommand EliminarSesionCommand { get; }
         public RelayCommand DialogoAñadirSesionCommand { get; }
         private ObservableCollection<Sesiones> _sesion;
@@ -39,7 +39,7 @@ namespace VistasProyecto.VMs
 
         public ListaSesionesUCVM()
         {
-             ns = new NavegacionServicio();
+             ns2 = new NavegacionServicio();
             _servicio = new cinebdService();
             Sesion = new ObservableCollection<Sesiones>(_servicio.getAllSesiones());
             DialogoAñadirSesionCommand = new RelayCommand(AbrirVentanaSesion);
@@ -52,7 +52,7 @@ namespace VistasProyecto.VMs
         }
 
         public void AbrirVentanaSesion() {
-            bool? resultado = ns.AbrirDialogoSesion();
+            bool? resultado = ns2.AbrirDialogoSesion();
         }
         public void EliminarSesion()
         {

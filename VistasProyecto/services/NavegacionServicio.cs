@@ -10,10 +10,10 @@ namespace VistasProyecto.services
 {
     public class NavegacionServicio
     {
-        private UserControl listadoPeliculas = new ListaPeliculasUC();
-        private UserControl listadoSalas = new ListaSalasUC();
-        private UserControl listadoSesiones = new ListaSesionesUC();
-        private UserControl listadoOcupacion = new ListaOcupacionUC();
+        private static UserControl listadoPeliculas = new ListaPeliculasUC();
+        private static UserControl listadoSalas = new ListaSalasUC();
+        private static UserControl listadoSesiones = new ListaSesionesUC();
+        private static UserControl listadoOcupacion = new ListaOcupacionUC();
         
 
         public NavegacionServicio() 
@@ -32,8 +32,12 @@ namespace VistasProyecto.services
         }
         public UserControl CargarListaSalasUC()
         {
+            if (listadoSalas == null)
+            {
+                listadoSalas = new ListaSalasUC();
+            }
             return listadoSalas;
-            
+
         }
         public bool? AbrirDialogoSesion()
         {

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\Cole\2DAM\DINT\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\
 VistasProyecto
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-F:\Cole\2DAM\DINT\ProyectoCineDINT\VistasProyecto\App.xaml
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\App.xaml
 81710135343
 
 27861533124
-200-23327529
+200-970875532
 DialogoSala.xaml;DialogoSesion.xaml;FormularioNuevaVentaUC.xaml;ListaOcupacionUC.xaml;ListaPeliculasUC.xaml;ListaSalasUC.xaml;ListaSesionesUC.xaml;MainWindow.xaml;
 
 False
