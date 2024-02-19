@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.Messaging.Messages;
-using ProyectoCine.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

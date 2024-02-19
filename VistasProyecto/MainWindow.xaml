@@ -41,8 +41,8 @@
                         <Button Content="Gestionar sesiones" Margin="0 5 0 0" Command="{Binding Path=ListaSesionesUCCommand}"/>
                     </TreeViewItem>
                     <TreeViewItem Header="Trabajador de Taquilla">
-                        <Button Content="Venta en taquillas" Margin="0 5 0 0"/>
-                        <Button Content="Ocupacción de salas" Margin="0 5 0 0"/>
+                        <Button Content="Venta en taquillas" Margin="0 5 0 0" Command="{Binding Path=FNuevaVentaUCCommand}"/>
+                        <Button Content="Ocupacción de salas" Margin="0 5 0 0" Command="{Binding Path=LOcupacionUCCommand}"/>
                     </TreeViewItem>
                 </TreeView>
                 <Button Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource RoundButtonStyle}" DockPanel.Dock="Bottom">

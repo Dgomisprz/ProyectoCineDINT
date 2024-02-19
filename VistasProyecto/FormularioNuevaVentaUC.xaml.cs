@@ -29,5 +29,10 @@ namespace VistasProyecto
             vm = new FormularioNuevaVentaUCVM();
             this.DataContext = vm;
         }
+
+        private void AceptarButton1_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Aceptar();
+        }
     }
 }
