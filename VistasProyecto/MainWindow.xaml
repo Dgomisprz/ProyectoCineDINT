@@ -48,7 +48,7 @@
                         <Button Content="Ocupacción de salas" Margin="0 5 0 0" Command="{Binding Path=LOcupacionUCCommand}"/>
                     </TreeViewItem>
                 </TreeView>
-                <Button Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource RoundButtonStyle}" DockPanel.Dock="Bottom">
+                <Button Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource RoundButtonStyle}" DockPanel.Dock="Bottom" Command="{Binding Path=MostrarInfo}">
                     <Image Width="25" Height="25" Source="/Resources/32.png"/>
                 </Button>
                 <Rectangle/>
