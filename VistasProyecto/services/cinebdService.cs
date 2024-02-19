@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 using VistasProyecto.models;
 
 namespace VistasProyecto.services
@@ -16,7 +17,7 @@ namespace VistasProyecto.services
         SqliteCommand comando;
         public cinebdService()
         {
-            conexion = new SqliteConnection("Data Source=cinebalmis.db");
+            conexion = new SqliteConnection("Data Source=./cinebalmis.db");
             conexion.Open();
             comando = conexion.CreateCommand();
         }
@@ -30,10 +31,10 @@ namespace VistasProyecto.services
             {
                 while (lector.Read())
                 {
-                    int idPelicula = (int)lector["idPelicula"];
+                    int idPelicula = (int)(long)lector["idPelicula"];
                     string titulo = (string)lector["titulo"];
                     string cartel = (string)lector["cartel"];
-                    int anyo = (int)lector["anyo"];
+                    int anyo = (int)(long)lector["año"];
                     string genero = (string)lector["genero"];
                     string calificacion = (string)lector["cartel"];
                     listaPeliculas.Add(new Peliculas(idPelicula, titulo, cartel, anyo, genero, calificacion));
@@ -46,18 +47,20 @@ namespace VistasProyecto.services
         {
             List<Salas> listaSalas = new List<Salas>();
             comando.CommandText = "SELECT * FROM salas";
-            SqliteDataReader lector = comando.ExecuteReader();
-            if (lector.HasRows)
-            {
-                while (lector.Read())
+            try {
+                SqliteDataReader lector = comando.ExecuteReader();
+                if (lector.HasRows)
                 {
-                    int idSala = (int)lector["idSala"];
-                    string numero = (string)lector["numero"];
-                    int capacidad = (int)lector["capacidad"];
-                    bool disponible = (bool)lector["disponible"];
-                    listaSalas.Add(new Salas(idSala, numero, capacidad, disponible));
+                    while (lector.Read())
+                    {
+                        int idSala = (int)(long)lector["idSala"];
+                        string numero = (string)lector["numero"];
+                        int capacidad = (int)(long)lector["capacidad"];
+                        bool disponible = (bool)lector["disponible"];
+                        listaSalas.Add(new Salas(idSala, numero, capacidad, disponible));
+                    }
                 }
-            }
+            } catch (Exception e) { MessageBox.Show("No carga listas"); }
             return listaSalas;
         }
         public void anyadirSala(Salas sala)
@@ -106,9 +109,9 @@ namespace VistasProyecto.services
             {
                 while (lector.Read())
                 {
-                    int idSesion = (int)lector["idSesion"];
-                    int pelicula = (int)lector["pelicula"];
-                    int sala = (int)lector["sala"];
+                    int idSesion = (int)(long)lector["idSesion"];
+                    int pelicula = (int)(long)lector["pelicula"];
+                    int sala = (int)(long)lector["sala"];
                     string hora = (string)lector["hora"];
                     listaSesiones.Add(new Sesiones(idSesion, pelicula, sala, hora));
                 }
@@ -181,7 +184,7 @@ namespace VistasProyecto.services
                     string numSala = (string)lector["sal.numero"];
                     string capacidadSala = (string)lector["sal.capacidad"];
                     string hora = (string)lector["s.hora"];
-                    int numVentas = (int)lector["NumVentas"];
+                    int numVentas = (int)(long)lector["NumVentas"];
                     object[] objects = { numSala, capacidadSala, hora, numVentas };
                     list.Add(objects);
                 }

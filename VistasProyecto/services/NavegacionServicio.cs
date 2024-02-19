@@ -10,10 +10,10 @@ namespace VistasProyecto.services
 {
     public class NavegacionServicio
     {
-        private static UserControl listadoPeliculas = new ListaPeliculasUC();
-        private static UserControl listadoSalas = new ListaSalasUC();
-        private static UserControl listadoSesiones = new ListaSesionesUC();
-        private static UserControl listadoOcupacion = new ListaOcupacionUC();
+        private UserControl listadoPeliculas = new ListaPeliculasUC();
+        private UserControl listadoSalas = new ListaSalasUC();
+        private UserControl listadoSesiones = new ListaSesionesUC();
+        private UserControl listadoOcupacion = new ListaOcupacionUC();
         
 
         public NavegacionServicio() 

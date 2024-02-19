@@ -18,7 +18,7 @@ namespace VistasProyecto.VMs
     {
         private NavegacionServicio ns;
         public RelayCommand DialogoAñadirSalasCommand { get; }
-        private ObservableCollection<Salas> _salas;
+        private ObservableCollection<Salas> _salas = new ObservableCollection<Salas>();
 
         public ObservableCollection<Salas> Salas
         {
