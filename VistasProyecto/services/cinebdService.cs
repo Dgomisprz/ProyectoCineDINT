@@ -16,7 +16,7 @@ namespace VistasProyecto.services
         SqliteCommand comando;
         public cinebdService()
         {
-            conexion = new SqliteConnection("Data Source=./bd/cinebalmis.db");
+            conexion = new SqliteConnection("Data Source=cinebalmis.db");
             conexion.Open();
             comando = conexion.CreateCommand();
         }
