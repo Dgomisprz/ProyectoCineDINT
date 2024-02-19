@@ -14,6 +14,7 @@ namespace VistasProyecto.services
         private static UserControl listadoSalas = new ListaSalasUC();
         private static UserControl listadoSesiones = new ListaSesionesUC();
         private static UserControl listadoOcupacion = new ListaOcupacionUC();
+        
 
         public NavegacionServicio() 
         { 

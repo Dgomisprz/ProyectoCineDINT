@@ -15,6 +15,7 @@ namespace VistasProyecto.VMs
 
     {
         private NavegacionServicio ns;
+       
         private UserControl contenidoMostrar;
         public UserControl ContenidoMostrar
         {
@@ -40,6 +41,9 @@ namespace VistasProyecto.VMs
             ListaPeliculasUCCommand = new RelayCommand(CargarUCListaPeliculas);
             FNuevaVentaUCCommand = new RelayCommand(CargarUCVentas);
             LOcupacionUCCommand = new RelayCommand(CargarUCListaOcupacion);
+
+
+
         }
 
         public void CargarUCListaSesiones() {
