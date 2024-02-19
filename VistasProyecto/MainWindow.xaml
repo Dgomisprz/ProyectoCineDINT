@@ -30,7 +30,10 @@
     </Window.Resources>
     
     <DockPanel>
-       
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/Resources/SalaDeCine.jpg" Stretch="Uniform" TileMode="None" AlignmentX="Right" AlignmentY="Center"/>
+        </DockPanel.Background>
+
         <Border BorderBrush="Black" BorderThickness="1" Margin="10">
             <DockPanel DockPanel.Dock="Left" LastChildFill="True">
                 <Image Stretch="Uniform" Margin="10" Source="/Resources/quiero-un-logo-para-un-cine-upscaled.jpg" Width="125" Height="72" HorizontalAlignment="Left" DockPanel.Dock="Top"/>
@@ -52,6 +55,9 @@
             </DockPanel>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Margin="10">
+            <Border.Background>
+                <ImageBrush/>
+            </Border.Background>
             <ContentControl Content="{Binding Path=ContenidoMostrar}"></ContentControl>
         </Border>
     </DockPanel >
