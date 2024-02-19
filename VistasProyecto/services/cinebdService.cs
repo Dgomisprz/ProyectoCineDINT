@@ -31,12 +31,12 @@ namespace VistasProyecto.services
             {
                 while (lector.Read())
                 {
-                    int idPelicula = (int)(long)lector["idPelicula"];
-                    string titulo = (string)lector["titulo"];
-                    string cartel = (string)lector["cartel"];
-                    int anyo = (int)(long)lector["año"];
-                    string genero = (string)lector["genero"];
-                    string calificacion = (string)lector["cartel"];
+                    int idPelicula = lector.GetInt32(0);
+                    string titulo = lector.GetString(1);
+                    string cartel = lector.GetString(2);
+                    int anyo = lector.GetInt32(3);
+                    string genero = lector.GetString(4);
+                    string calificacion = lector.GetString(5);
                     listaPeliculas.Add(new Peliculas(idPelicula, titulo, cartel, anyo, genero, calificacion));
                 }
             }
@@ -52,10 +52,10 @@ namespace VistasProyecto.services
             {
                 while (lector.Read())
                 {
-                    int idSala = (int)(long)lector["idSala"];
-                    string numero = (string)lector["numero"];
-                    int capacidad = (int)(long)lector["capacidad"];
-                    bool disponible = (bool)lector["disponible"];
+                    int idSala = lector.GetInt32(0);
+                    string numero = lector.GetString(1);
+                    int capacidad = lector.GetInt32(2);
+                    bool disponible = lector.GetBoolean(3);
                     listaSalas.Add(new Salas(idSala, numero, capacidad, disponible));
                 }
             }
@@ -107,10 +107,10 @@ namespace VistasProyecto.services
             {
                 while (lector.Read())
                 {
-                    int idSesion = (int)(long)lector["idSesion"];
-                    int pelicula = (int)(long)lector["pelicula"];
-                    int sala = (int)(long)lector["sala"];
-                    string hora = (string)lector["hora"];
+                    int idSesion = lector.GetInt32(0);
+                    int pelicula = lector.GetInt32(1);
+                    int sala = lector.GetInt32(2);
+                    string hora = lector.GetString(3);
                     listaSesiones.Add(new Sesiones(idSesion, pelicula, sala, hora));
                 }
             }

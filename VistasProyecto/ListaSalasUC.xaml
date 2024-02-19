@@ -12,11 +12,11 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Path=Numero, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            <TextBlock Text="{Binding Path=Salas.Numero, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
                             <TextBlock Text="-"></TextBlock>
-                            <TextBlock Text="{Binding Path=Capacidad, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            <TextBlock Text="{Binding Path=Salas.Capacidad, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
                             <TextBlock Text="-"></TextBlock>
-                            <TextBlock Text="{Binding Path=Disponible, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            <TextBlock Text="{Binding Path=Salas.Disponible, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
