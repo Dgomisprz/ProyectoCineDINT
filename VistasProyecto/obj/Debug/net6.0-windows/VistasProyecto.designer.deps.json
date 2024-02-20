@@ -180,6 +180,37 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.7": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "24.2.7.0",
+            "fileVersion": "24.2.7.0"
+          }
+        }
+      },
+      "Syncfusion.SfTextInputLayout.WPF/24.2.7": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.7",
+          "Syncfusion.Shared.WPF": "24.2.7"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfTextInputLayout.WPF.dll": {
+            "assemblyVersion": "24.2.7.0",
+            "fileVersion": "24.2.7.0"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/24.2.7": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.7"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "24.2.7.0",
+            "fileVersion": "24.2.7.0"
+          }
+        }
+      },
       "System.Memory/4.5.3": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "runtime": {
@@ -278,6 +309,27 @@
       "sha512": "sha512-PQ2Oq3yepLY4P7ll145P3xtx2bX8xF4PzaKPRpw9jZlKvfe4LE/saAV82inND9usn1XRpmxXk7Lal3MTI+6CNg==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.1.6",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/24.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1r6Dea99RxfKT4m1t2D8wNS7QA5NJf0wDUhy/vQUZkVuSA5+S7ZUNIaf14KVac5mbc9re+sg0xvKUS9909pVew==",
+      "path": "syncfusion.licensing/24.2.7",
+      "hashPath": "syncfusion.licensing.24.2.7.nupkg.sha512"
+    },
+    "Syncfusion.SfTextInputLayout.WPF/24.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TloQwgkzlhEf+LsvHpH+ZigJz/1DzO3cJtHa7hnevaqq9f2IAgONmE1KWGCf0MealBtfms8bCO2fRGMhCvxrPA==",
+      "path": "syncfusion.sftextinputlayout.wpf/24.2.7",
+      "hashPath": "syncfusion.sftextinputlayout.wpf.24.2.7.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/24.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QjX2jOrAZquN9r71dl7lhCkiQ8KfIx0lYCLPmU85JUDRmQmLd4MOJtV7AEpltnv9bt3zXMu3F+UpxlahatDn+g==",
+      "path": "syncfusion.shared.wpf/24.2.7",
+      "hashPath": "syncfusion.shared.wpf.24.2.7.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",

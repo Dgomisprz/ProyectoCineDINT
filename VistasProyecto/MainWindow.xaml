@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VistasProyecto"
+        xmlns:local="clr-namespace:VistasProyecto" xmlns:vms="clr-namespace:VistasProyecto.VMs" d:DataContext="{d:DesignInstance Type=vms:MainWindowVM}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
@@ -58,7 +58,7 @@
             <Border.Background>
                 <ImageBrush/>
             </Border.Background>
-            <ContentControl Content="{Binding Path=ContenidoMostrar}"></ContentControl>
+            <ContentControl Content="{Binding ContenidoMostrar}"></ContentControl>
         </Border>
     </DockPanel >
 </Window>

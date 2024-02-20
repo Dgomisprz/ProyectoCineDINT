@@ -21,12 +21,12 @@ namespace VistasProyecto
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MainWindowVM vm;
+       // private MainWindowVM vm;
         public MainWindow()
         {
             InitializeComponent();
-            vm = new MainWindowVM();
-            DataContext = vm;
+            //vm = new MainWindowVM();
+            DataContext = new MainWindowVM();
         }
     }
 }

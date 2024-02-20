@@ -26,6 +26,13 @@ namespace VistasProyecto.VMs
             get { return _salas; }
             set { SetProperty(ref _salas, value); }
         }
+        private Salas _salaSeleccionada;
+
+        public Salas SalaSeleccionada
+        {
+            get { return _salaSeleccionada; }
+            set { SetProperty(ref _salaSeleccionada, value); }
+        }
         private cinebdService _servicio;
 
         public ListaSalasUCVM()

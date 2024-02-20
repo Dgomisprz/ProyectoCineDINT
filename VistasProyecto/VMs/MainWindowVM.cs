@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +17,13 @@ namespace VistasProyecto.VMs
     {
         private NavegacionServicio ns;
        
-        private UserControl? contenidoMostrar;
-        public UserControl? ContenidoMostrar
+        private UserControl contenidoMostrar;
+        public UserControl ContenidoMostrar
         {
             get { return contenidoMostrar; }
             set { SetProperty(ref contenidoMostrar, value); }
         }
+        public RelayCommand MostrarInfo { get; }
        
         public RelayCommand ListaSesionesUCCommand { get; }
         public RelayCommand ListaSalasUCCommand { get; }
@@ -40,6 +42,7 @@ namespace VistasProyecto.VMs
             ListaPeliculasUCCommand = new RelayCommand(CargarUCListaPeliculas);
             FNuevaVentaUCCommand = new RelayCommand(CargarUCVentas);
             LOcupacionUCCommand = new RelayCommand(CargarUCListaOcupacion);
+            MostrarInfo = new RelayCommand(AbrirDocumento);
 
         }
 
@@ -67,5 +70,8 @@ namespace VistasProyecto.VMs
             contenidoMostrar = ns.CargarListaOcupacionUC(); 
         }
 
+        public void AbrirDocumento() {
+            Process.Start("C:\\Users\\Danny\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\ProyectoCine.chm");
+        }
     }
 }

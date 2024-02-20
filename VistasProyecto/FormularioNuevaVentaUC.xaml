@@ -4,24 +4,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VistasProyecto"
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputLayout;assembly=Syncfusion.SfTextInputLayout.WPF"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <DockPanel LastChildFill="True">
         <StackPanel Margin="5" DockPanel.Dock="Top">
-            <Label Name="nSala">Introduce el id de la sesión:</Label>
-            <TextBox Text="{Binding Path=IdSesion, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
-            <Label Name="cSala">Introduce la cantidad de entradas:</Label>
-            <TextBox Text="{Binding Path=Cantidad, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
-            <Label Name="dSala">Elige el metodo de pago:</Label>
+            <syncfusion:SfTextInputLayout Hint="Id de la sesión" HelperText="Introduce el id de la sesion a la que quieras asistir">
+                <TextBox Text="{Binding Path=IdSesion, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+              
+            </syncfusion:SfTextInputLayout>
+            <syncfusion:SfTextInputLayout Hint="Cantidad de entradas" HelperText="Introduce la cantidad de entradas que desee adquirir">
+                <TextBox Text="{Binding Path=Cantidad, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+               
+            </syncfusion:SfTextInputLayout>
             
-            <ComboBox SelectedItem="{Binding Path=Pago, UpdateSourceTrigger=PropertyChanged}">
-                <ComboBoxItem>Efectivo,</ComboBoxItem>
-                <ComboBoxItem>Tarjeta</ComboBoxItem>
-                <ComboBoxItem>Bizum</ComboBoxItem>
-            </ComboBox>
-        
-            
-            
+                <inputLayout:SfTextInputLayout Hint="Selecciona metodo de pago" HelperText="Forma que quieres pagar las entradas" Margin="4">
+                <ComboBox Width="150" Margin="0,5,5,5"  SelectedItem="{Binding Path=Pago, UpdateSourceTrigger=PropertyChanged}">
+                    <ComboBoxItem>Efectivo</ComboBoxItem>
+                    <ComboBoxItem>Tarjeta</ComboBoxItem>
+                    <ComboBoxItem>Bizum</ComboBoxItem>
+                </ComboBox>
+               
+            </inputLayout:SfTextInputLayout>
+           
         </StackPanel>
         <WrapPanel HorizontalAlignment="Right" Margin="0,15,0,0" DockPanel.Dock="Bottom">
             <Button IsDefault="True" x:Name="aceptarButton1"  MinWidth="60" Margin="0,0,10,0" Click="AceptarButton1_Click">_Ok</Button>
