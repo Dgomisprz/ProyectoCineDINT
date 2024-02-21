@@ -32,5 +32,14 @@ namespace VistasProyecto.Properties {
                 return ((string)(this["claveSyncFusion"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Dani, Izan Y Samir")]
+        public string Autores {
+            get {
+                return ((string)(this["Autores"]));
+            }
+        }
     }
 }

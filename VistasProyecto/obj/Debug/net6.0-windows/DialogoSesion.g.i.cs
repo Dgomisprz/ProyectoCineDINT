@@ -85,7 +85,7 @@ namespace VistasProyecto {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/VistasProyecto;component/dialogosesion.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/VistasProyecto;V1.0.0.0;component/dialogosesion.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\DialogoSesion.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
