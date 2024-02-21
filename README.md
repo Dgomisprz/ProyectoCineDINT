@@ -1,5 +1,5 @@
-Proyeco de Dani, Izan y Samir 
+Proyeco de Daniel Gomis Pérez, Izan Frias Calvo y Samir Wawa Asnani
 
 Samir ha hecho el acceso a datos y modelos
 Izan ha hecho las vistas 
-Dani ha hecho los view models y solución de errores
+Daniel ha hecho los view models y solución de errores

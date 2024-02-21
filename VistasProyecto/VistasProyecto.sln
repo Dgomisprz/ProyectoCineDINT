@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistasProyecto", "VistasProyecto.csproj", "{55002E25-603A-47F3-A1FF-C7912E3171FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VistasProyecto", "VistasProyecto.csproj", "{55002E25-603A-47F3-A1FF-C7912E3171FA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CineBalmis", "..\CineBalmis\CineBalmis.vdproj", "{4CE937EE-6587-44F7-8CEC-56FFA68BF1C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{55002E25-603A-47F3-A1FF-C7912E3171FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55002E25-603A-47F3-A1FF-C7912E3171FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55002E25-603A-47F3-A1FF-C7912E3171FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE937EE-6587-44F7-8CEC-56FFA68BF1C9}.Debug|Any CPU.ActiveCfg = Debug
+		{4CE937EE-6587-44F7-8CEC-56FFA68BF1C9}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
