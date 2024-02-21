@@ -3,16 +3,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputLayout;assembly=Syncfusion.SfTextInputLayout.WPF"
         xmlns:local="clr-namespace:VistasProyecto"
         mc:Ignorable="d"
-        Title="DialogoSala" Height="200" Width="400">
+        Title="DialogoSala" Height="275" Width="450">
     <StackPanel>
-        <Label Name="nSala">Introduce el numero de la sala:</Label>
+        <!--<Label Name="nSala">Introduce el numero de la sala:</Label>
         <TextBox Text="{Binding Path=Numero, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
         <Label Name="cSala">Introduce su capacidad:</Label>
         <TextBox Text="{Binding Path=Capacidad, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
         <Label Name="dSala">Introduce si esta disponible:</Label>
-        <TextBox Text="{Binding Path=Disponible, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
+        <TextBox Text="{Binding Path=Disponible, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>-->
+
+        <syncfusion:SfTextInputLayout Hint="Numero Sala" HelperText="Introduce el numero de la sala">
+            <TextBox Text="{Binding Path=Numero, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+
+        </syncfusion:SfTextInputLayout>
+        <syncfusion:SfTextInputLayout Hint="Capcidad Sala" HelperText="Introduce la capacidad de la sala">
+            <TextBox Text="{Binding Path=Capcidad, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+
+        </syncfusion:SfTextInputLayout>
+        
+        <syncfusion:SfTextInputLayout Hint="Disponible?" HelperText="Introduce si esta disponible">
+            <ComboBox Width="150" Margin="0,5,5,5"  SelectedItem="{Binding Path=Disponible, UpdateSourceTrigger=PropertyChanged}">
+                <ComboBoxItem>si</ComboBoxItem>
+                <ComboBoxItem>no</ComboBoxItem>
+            </ComboBox>
+        </syncfusion:SfTextInputLayout>
+
 
         <WrapPanel HorizontalAlignment="Right" Margin="0,15,0,0">
             <Button IsDefault="True" x:Name="aceptarButton1"  MinWidth="60" Margin="0,0,10,0" Click="AceptarButton1_Click">_Ok</Button>

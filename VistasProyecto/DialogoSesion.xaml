@@ -3,16 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputLayout;assembly=Syncfusion.SfTextInputLayout.WPF"
         xmlns:local="clr-namespace:VistasProyecto"
         mc:Ignorable="d"
-        Title="DialogoSesion" Height="200" Width="400">
+        Title="DialogoSesion" Height="275" Width="450">
     <StackPanel>
-        <Label Name="nPelicula">Introduce el id de la pelicula:</Label>
+        <!--<Label Name="nPelicula">Introduce el id de la pelicula:</Label>
         <TextBox Text="{Binding Path=Pelicula, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
         <Label Name="sala">Introduce el numero de sala:</Label>
         <TextBox Text="{Binding Path=Sala, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
         <Label Name="hPelicula">Introduce la hora:</Label>
-        <TextBox Text="{Binding Path=Hora, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>
+        <TextBox Text="{Binding Path=Hora, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"></TextBox>-->
+
+        <syncfusion:SfTextInputLayout Hint="Id de la película" HelperText="Introduce el id de la película a la que quieras asistir">
+            <TextBox Text="{Binding Path=Pelicula, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+
+        </syncfusion:SfTextInputLayout>
+        <syncfusion:SfTextInputLayout Hint="Numero Sala" HelperText="Introduce el numero de la sala">
+            <TextBox Text="{Binding Path=Sala, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+
+        </syncfusion:SfTextInputLayout>
+        <syncfusion:SfTextInputLayout Hint="Hora" HelperText="Introduce la hora">
+            <TextBox Text="{Binding Path=Hora, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>
+
+        </syncfusion:SfTextInputLayout>
 
         <WrapPanel HorizontalAlignment="Right" Margin="0,15,0,0">
             <Button IsDefault="True" x:Name="aceptarButton1"  MinWidth="60" Margin="0,0,10,0" Click="AceptarButton1_Click">_Ok</Button>

@@ -8,7 +8,7 @@
              xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputLayout;assembly=Syncfusion.SfTextInputLayout.WPF"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel LastChildFill="True">
+    <DockPanel LastChildFill="True" Background="White">
         <StackPanel Margin="5" DockPanel.Dock="Top">
             <syncfusion:SfTextInputLayout Hint="Id de la sesión" HelperText="Introduce el id de la sesion a la que quieras asistir">
                 <TextBox Text="{Binding Path=IdSesion, UpdateSourceTrigger=PropertyChanged}" MinWidth="250"/>

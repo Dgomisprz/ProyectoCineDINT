@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:VistasProyecto"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="White">
         <ItemsControl ItemsSource="{Binding Path=Peliculas}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
