@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VistasProyecto" xmlns:vms="clr-namespace:VistasProyecto.VMs" d:DataContext="{d:DesignInstance Type=vms:MainWindowVM}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Cine Balmis" Height="450" Width="800">
     <Window.Resources>
         <!-- Estilo para el TreeView -->
         <Style TargetType="TreeView">

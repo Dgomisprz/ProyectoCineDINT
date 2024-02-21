@@ -272,3 +272,7 @@ C:\Users\Danny\source\repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-win
 C:\Users\Danny\source\repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
 C:\Users\Danny\source\repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.SfTextInputLayout.WPF.dll
 C:\Users\Danny\source\repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.Shared.WPF.dll
+C:\Users\alumno\Source\Repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\VistasProyecto.dll.config
+C:\Users\alumno\Source\Repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+C:\Users\alumno\Source\Repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.SfTextInputLayout.WPF.dll
+C:\Users\alumno\Source\Repos\ProyectoCineDINT\VistasProyecto\bin\Debug\net6.0-windows\Syncfusion.Shared.WPF.dll

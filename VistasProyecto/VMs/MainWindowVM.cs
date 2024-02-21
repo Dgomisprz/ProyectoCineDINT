@@ -71,7 +71,7 @@ namespace VistasProyecto.VMs
         }
 
         public void AbrirDocumento() {
-            Process.Start("C:\\Users\\Danny\\source\\repos\\ProyectoCineDINT\\VistasProyecto\\ProyectoCine.chm");
+            Process.Start(".\\VistasProyecto\\ProyectoCine.chm");
         }
     }
 }
