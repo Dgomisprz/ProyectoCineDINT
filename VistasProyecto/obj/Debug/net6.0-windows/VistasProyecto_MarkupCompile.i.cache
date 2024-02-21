@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alumno\source\repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\obj\Debug\net6.0-windows\
 VistasProyecto
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\alumno\source\repos\ProyectoCineDINT\VistasProyecto\App.xaml
+C:\Users\Danny\Source\Repos\ProyectoCineDINT\VistasProyecto\App.xaml
 81710135343
 21035248849
 302071942157
-203409296008
+2031526390452
 DialogoSala.xaml;DialogoSesion.xaml;FormularioNuevaVentaUC.xaml;ListaOcupacionUC.xaml;ListaPeliculasUC.xaml;ListaSalasUC.xaml;ListaSesionesUC.xaml;MainWindow.xaml;
 
-False
+True
 

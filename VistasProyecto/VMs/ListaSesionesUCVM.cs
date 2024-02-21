@@ -47,6 +47,8 @@ namespace VistasProyecto.VMs
             WeakReferenceMessenger.Default.Register<SesionSendMessage>(this, (r, m) =>
             {
                 Sesion.Add(m.Value);
+               
+                
             });
 
         }

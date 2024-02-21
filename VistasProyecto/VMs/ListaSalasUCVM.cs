@@ -43,29 +43,11 @@ namespace VistasProyecto.VMs
             Salas = new ObservableCollection<Salas>(_servicio.getAllSalas());
             DialogoSalasCommand = new RelayCommand(AbrirVentanaSalas);
 
-            
-            WeakReferenceMessenger.Default.Register<SalaSendMessage>(this, (vm, mensaje) =>
-            {
-                var viewModel = vm as ListaSalasUCVM;
-                if (viewModel != null)
-                {
-                    // Verificar si la sala ya existe en la lista
-                    var salaExistente = viewModel.Salas.FirstOrDefault(s => s.IdSala == mensaje.Value.IdSala);
-                    if (salaExistente != null)
-                    {
-                        // Si la sala existe, actualizar sus propiedades
-                        salaExistente.Numero = mensaje.Value.Numero;
-                        salaExistente.Capacidad = mensaje.Value.Capacidad;
-                        salaExistente.Disponible = mensaje.Value.Disponible;
-                    }
-                    else
-                    {
-                        // Si la sala no existe, agregarla a la lista
-                        viewModel.Salas.Add(mensaje.Value);
-                        _servicio.anyadirSala(mensaje.Value);
 
-                    }
-                }
+            WeakReferenceMessenger.Default.Register<SalaSendMessage>(this, (r, m) =>
+            {
+                Salas.Add(m.Value);
+                
             });
         }
         public void AbrirVentanaSalas() {
