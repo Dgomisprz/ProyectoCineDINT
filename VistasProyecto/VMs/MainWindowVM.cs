@@ -6,9 +6,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using VistasProyecto.services;
+using System.IO;
+
 
 namespace VistasProyecto.VMs
 {
@@ -35,8 +38,9 @@ namespace VistasProyecto.VMs
 
         public MainWindowVM() {
             ns = new NavegacionServicio();
+            ContenidoMostrar = new UserControl();
 
-           
+
             ListaSesionesUCCommand = new RelayCommand(CargarUCListaSesiones);
             ListaSalasUCCommand = new RelayCommand(CargarUCListaSalas);
             ListaPeliculasUCCommand = new RelayCommand(CargarUCListaPeliculas);
@@ -47,31 +51,31 @@ namespace VistasProyecto.VMs
         }
 
         public void CargarUCListaSesiones() {
-            contenidoMostrar = ns.CargarListaSesionesUC();
+            ContenidoMostrar = ns.CargarListaSesionesUC();
         }
 
         public void CargarUCListaSalas()
         {
-            contenidoMostrar = ns.CargarListaSalasUC();
+            ContenidoMostrar = ns.CargarListaSalasUC();
         }
 
         public void CargarUCListaPeliculas()
         {
-            contenidoMostrar = ns.CargarListaPeliculasUC();
+            ContenidoMostrar = ns.CargarListaPeliculasUC();
         }
 
         public void CargarUCVentas()
         {
-            contenidoMostrar = ns.CargarFormularioNuevaVentaUC();
+            ContenidoMostrar = ns.CargarFormularioNuevaVentaUC();
         }
 
         public void CargarUCListaOcupacion()
         {
-            contenidoMostrar = ns.CargarListaOcupacionUC(); 
+            ContenidoMostrar = ns.CargarListaOcupacionUC(); 
         }
 
         public void AbrirDocumento() {
-            Process.Start(".\\VistasProyecto\\ProyectoCine.chm");
+            System.Diagnostics.Process.Start("ProyectoCine.chm");
         }
     }
 }

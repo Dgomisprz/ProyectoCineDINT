@@ -23,7 +23,8 @@ namespace VistasProyecto.services
 
         public UserControl CargarListaPeliculasUC()
         {
-            return listadoPeliculas;
+            // return listadoPeliculas;
+            return new ListaPeliculasUC();
         }
         public bool? AbrirDialogoSala()
         {

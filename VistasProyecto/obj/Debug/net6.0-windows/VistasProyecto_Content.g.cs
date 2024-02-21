@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cinema_3d_glasses_icon-icons.com_66129.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("proyectocine.chm")]
 
 

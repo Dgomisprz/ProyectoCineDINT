@@ -55,9 +55,6 @@
             </DockPanel>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Margin="10">
-            <Border.Background>
-                <ImageBrush/>
-            </Border.Background>
             <ContentControl Content="{Binding ContenidoMostrar}"></ContentControl>
         </Border>
     </DockPanel >

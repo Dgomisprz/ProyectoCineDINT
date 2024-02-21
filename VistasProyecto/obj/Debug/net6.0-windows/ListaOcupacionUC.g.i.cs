@@ -53,7 +53,7 @@ namespace VistasProyecto {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/VistasProyecto;V1.0.0.0;component/listaocupacionuc.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/VistasProyecto;component/listaocupacionuc.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ListaOcupacionUC.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

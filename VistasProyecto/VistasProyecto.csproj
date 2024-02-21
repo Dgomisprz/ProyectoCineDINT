@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ProyectoCine.chm" />
     <None Remove="Resources\32.png" />
     <None Remove="Resources\quiero-un-logo-para-un-cine-upscaled.jpg" />
     <None Remove="Resources\SalaDeCine.jpg" />
@@ -17,6 +18,9 @@
 
   <ItemGroup>
     <Content Include="cinema_3d_glasses_icon-icons.com_66129.ico" />
+    <Content Include="ProyectoCine.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
