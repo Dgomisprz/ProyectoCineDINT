@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xazbs/O/+Lv0SZ6aFimENwsn7lp1vLiF0p4Bvy6Z/Ei6b4GXa10pagVFmFxQk+ybAm12Vuy8HgiVw+4wB3yQOg==",
+  "dgSpecHash": "ez80O9ekhO7zvn7zJVPPV24OmWXSeIfZd4qIT7gkqCf6f2zSn0UQ+q/nanSzQV42Zc6yFzUVy0ZBk/EdOgoJLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alumno\\Source\\Repos\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
+  "projectFilePath": "C:\\Users\\alumno\\Desktop\\Varios\\Izan\\DI\\proyecto\\nuevo\\ProyectoCineDINT\\VistasProyecto\\VistasProyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alumno\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\alumno\\.nuget\\packages\\microsoft.data.sqlite\\8.0.1\\microsoft.data.sqlite.8.0.1.nupkg.sha512",

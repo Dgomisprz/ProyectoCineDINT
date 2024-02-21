@@ -5,6 +5,7 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>cinema_3d_glasses_icon-icons.com_66129.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +13,10 @@
     <None Remove="Resources\quiero-un-logo-para-un-cine-upscaled.jpg" />
     <None Remove="Resources\SalaDeCine.jpg" />
     <None Remove="SalaDeCine.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="cinema_3d_glasses_icon-icons.com_66129.ico" />
   </ItemGroup>
 
   <ItemGroup>
